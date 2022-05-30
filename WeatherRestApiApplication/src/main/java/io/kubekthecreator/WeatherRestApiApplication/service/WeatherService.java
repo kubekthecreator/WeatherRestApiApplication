@@ -5,7 +5,8 @@ import io.kubekthecreator.WeatherRestApiApplication.webclient.weather.WeatherCli
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 @Service
 @Slf4j
@@ -14,9 +15,11 @@ public class WeatherService {
 
     private final WeatherClient weatherClient;
     public WeatherDto getWeather() {
-        String response = weatherClient.getWeatherForCity("Jastarnia");
-        log.info(response);
-        return null;
+        return (weatherClient.getWeatherForCity("2022-05-30", "Jastarnia"));
+    }
+
+    public WeatherDto surfing(String date){
+        return weatherClient.validateBestLocation(date);
     }
 
 }
