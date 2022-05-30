@@ -11,7 +11,7 @@ Aplikacja włączy się pod adresem http://localhost:8080
 
 🌊
 
-Aby pobrać dane lokalizacji, która najbardziej nadaję w danym dniu do surfowania trzeba przejść pod adres http://localhost:8080/surfing/{data}
+Aby pobrać dane lokalizacji, która najbardziej nadaję się w danym dniu do surfowania trzeba przejść pod adres http://localhost:8080/surfing/{data}
 Przykładowo: http://localhost:8080/surfing/2022-06-10
 Jeżeli żadna z podanych w bazie lokalizacji nie spełnia warunków godnych do surfowania aplikacja nie zwróci nic. 
 
