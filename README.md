@@ -20,5 +20,4 @@ Jeżeli żadna z podanych w bazie lokalizacji nie spełnia warunków godnych do 
 # Wykorzystane technologie 🔧
 - Java 17
 - Spring Boot
-- Hibernate/JPA
 
